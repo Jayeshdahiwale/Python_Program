@@ -13,8 +13,9 @@ It gives the power of two of the numbers till given input number
 
 
 def power_of_two():
-    number = int(input("Enter the number between 0 and 31: "))
-    for i in range(number):
+    number = int(input("Enter the number between 0 and less than 31: "))
+
+    for i in range(number+1):
         print(2 ** i)
 
 
