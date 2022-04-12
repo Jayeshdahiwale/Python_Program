@@ -3,3 +3,13 @@ INFO:too many values to unpack (expected 2)
 INFO:too many values to unpack (expected 2)
 INFO:too many values to unpack (expected 2)
 INFO:The distance from origin is 3.605551275463989
+INFO:ABC
+INFO:ACB
+INFO:BAC
+INFO:BCA
+INFO:CAB
+INFO:CBA
+INFO:Entered wrong key.Press valid key
+INFO:total time taken 9.689490556716919
+INFO:Root not exist
+INFO:1st Root is -1.0 & Second root is -1.0
