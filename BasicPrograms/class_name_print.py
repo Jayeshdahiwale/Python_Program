@@ -14,8 +14,8 @@ logging.basicConfig(filename="sample.log", level=logging.INFO, format="%(levelna
 
 def builtin_description():
     name = abs
-    print(abs.__module__)
-    print(abs.__doc__)
+    logging.info(abs.__module__)
+    logging.info(abs.__doc__)
 
 
 if __name__ == "__main__":
