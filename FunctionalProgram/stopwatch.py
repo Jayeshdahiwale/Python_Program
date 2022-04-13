@@ -27,8 +27,8 @@ def stop_watch():
     begin = time.time()
     stop = input("Enter any key to stop the stopwatch: ")
     end = time.time()
-    print(f"total time taken {end - begin}")
-    logging.info(f"total time taken {end - begin}")
+    print(f"total time taken in second {end - begin} sec: In minute {(end-begin)/60} min: In Hours {(end-begin)/3600} hours ")
+    logging.info(f"total time taken in second {end - begin} sec: In minute {(end-begin)/60} min: In Hours {(end-begin)/3600} hours ")
 
 
 if __name__ == "__main__":
