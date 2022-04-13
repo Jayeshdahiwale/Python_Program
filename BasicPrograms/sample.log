@@ -9,3 +9,5 @@ INFO:('1', '2', '3', '4')
 INFO:['1', '2', '3', '4']
 INFO:Red
 INFO:Black
+INFO:builtins
+INFO:Return the absolute value of the argument.
