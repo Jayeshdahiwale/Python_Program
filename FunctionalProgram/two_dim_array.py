@@ -20,5 +20,10 @@ def two_dim_array():
         for j in range(cols):
             one_d_array.append(elements[i*cols+j])
         two_d_array.append(one_d_array)
-    print(two_d_array)
+    for array in two_d_array:
+        print("|",end=" ")
+        for elements in array:
+            print(elements,end=" ")
+        print("|")
+
 two_dim_array()
