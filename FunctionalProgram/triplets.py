@@ -16,8 +16,8 @@ def triplets():
     integers_array = [int(i) for i in input("enter the integers separated by commas :").split(",")]
     triplet_set = []
     for i in range(no_of_integer - 2):
-        for j in range(1, no_of_integer - 1):
-            for k in range(2, no_of_integer):
+        for j in range(i+1, no_of_integer - 1):
+            for k in range(j+1, no_of_integer):
                 if integers_array[i] + integers_array[j] + integers_array[k] == 0:
                     triplet_set.append([integers_array[i], integers_array[j], integers_array[k]])
     print(triplet_set)
