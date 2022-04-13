@@ -137,18 +137,28 @@ class TicTacToe:
         return 0
 
 if __name__ == "__main__":
-    game = TicTacToe()
-    game.initialize
-    game.show_board
-    game.input_option
-    game.toss
-    while True:
-        game.start
-        game.show_board
-        result = game.check_winner
-        if result == 1:
-            print("Player won ")
+    while(True):
+        response = input(f"Press 1 to play, 2 to quit: ")
+        if response == "2":
             break
-        elif result == 2:
-            print("Computer won")
-            break
+        elif response == "1":
+            game = TicTacToe()
+            game.initialize
+            game.show_board
+            game.input_option
+            game.toss
+            while True:
+                game.start
+                game.show_board
+                result = game.check_winner
+                if result == 1:
+                    print("Player won ")
+                    break
+                elif result == 2:
+                    print("Computer won")
+                    break
+        else:
+            try:
+                raise KeyError("Enter the valid key ")
+            except KeyError:
+                print(KeyError)
